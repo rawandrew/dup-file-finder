@@ -9,7 +9,7 @@ defmodule Duper.Application do
     # List all child processes to be supervised
     children = [
       Duper.Results,
-      { Duper.PathFinder, "/home/andrei/Pictures" },
+      { Duper.PathFinder, "ADD PATH TO TARGET DIRECTORY" },
       Duper.WorkerSupervisor,
       { Duper.Gatherer, 1 }
     ]
